@@ -9,10 +9,10 @@
 
 ### All Stages in Pipeline
 ```
-running$ ./running_bootstrap.sh banque-trigger
+running$ ./running_bootstrap.sh banque-transaction
 WARNING: DEV => rm log and tmp
 
-PIPELINE BEGIN: banque-trigger
+PIPELINE BEGIN: banque-transaction
 
  + STAGE BEGIN: 10-test-setup
  | STEP STATUS: Successful      10-create-tables.step.sql
@@ -42,14 +42,14 @@ PIPELINE BEGIN: banque-trigger
 
  + STAGE END:   Failed  30-test-transaction.stage
 
-PIPELINE END:   Failed  banque-trigger.pipeline
+PIPELINE END:   Failed  banque-transaction.pipeline
 ```
 ### Stop Pipeline After Stage
 ```
-running$ ./running_bootstrap.sh banque-trigger 10-test-setup
+running$ ./running_bootstrap.sh banque-transaction 10-test-setup
 WARNING: DEV => rm log and tmp
 
-PIPELINE BEGIN: banque-trigger
+PIPELINE BEGIN: banque-transaction
 
  + STAGE BEGIN: 10-test-setup
  | STEP STATUS: Successful      10-create-tables.step.sql
@@ -57,5 +57,5 @@ PIPELINE BEGIN: banque-trigger
  | STEP STATUS: Successful      30-assert-examples.step.sql
  + STAGE END:   Successful      10-test-setup.stage
 
-PIPELINE END:   Successful      banque-trigger.pipeline
+PIPELINE END:   Successful      banque-transaction.pipeline
 ```
