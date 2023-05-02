@@ -1,0 +1,11 @@
+
+[1;94mPIPELINE BEGIN:	banque-trigger
+
+[1;94m + STAGE BEGIN:	10-test-setup
+[1;94m | [0;95mSTEP STATUS:	[92mSuccessful	10-create-tables.step.sql[39m
+[1;94m | [0;95mSTEP STATUS:	[92mSuccessful	20-banque.step.populate[39m
+[1;94m | [0;95mSTEP STATUS:	[92mSuccessful	30-assert-examples.step.sql[39m
+[1;94m + STAGE END:	[92mSuccessful	10-test-setup.stage[39m
+[1;94m
+PIPELINE END:	[92mSuccessful	banque-trigger.pipeline[39m
+
